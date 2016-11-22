@@ -1,0 +1,45 @@
+---
+title: "Procedura: fornire una finestra di dialogo dello stato di avanzamento per operazioni su file (Guida per programmatori C#) | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/17/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "Finestra di dialogo Stato avanzamento) [C#]"
+ms.assetid: 01b71fe7-8178-4dc8-aeb1-12053be7b51c
+caps.latest.revision: 15
+caps.handback.revision: 15
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translationtype: Human Translation
+---
+# Procedura: fornire una finestra di dialogo dello stato di avanzamento per operazioni su file (Guida per programmatori C#)
+È possibile fornire una finestra di dialogo standard con lo stato di avanzamento delle operazioni sui file in Windows se si utilizza il metodo <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile%28System.String%2CSystem.String%2CMicrosoft.VisualBasic.FileIO.UIOption%29> nello spazio dei nomi <xref:Microsoft.VisualBasic?displayProperty=fullName>.  
+  
+ [!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+  
+### Per aggiungere un riferimento in Visual Studio  
+  
+1.  Nella barra dei menu, scegliere **Progetto**, **Aggiungi riferimento**.  
+  
+     Viene visualizzata la finestra di dialogo **Gestione riferimenti**.  
+  
+2.  Nell'area **Assembly** scegliere l'opzione **Framework** se non è già stata selezionata.  
+  
+3.  Nell'elenco dei nomi, selezionare la casella di controllo **Microsoft.VisualBasic** e quindi scegliere il pulsante **OK** per chiudere la finestra di dialogo.  
+  
+## Esempio  
+ Il seguente codice copia la directory specificata da `sourcePath` nella directory specificata da `destinationPath`.  Questo codice fornisce inoltre una finestra di dialogo standard che mostra il tempo rimanente stimato prima del completamento dell'operazione.  
+  
+ [!CODE [csFilesandFolders#11](../CodeSnippet/VS_Snippets_VBCSharp/csFilesAndFolders#11)]  
+  
+## Vedere anche  
+ [File system e Registro di sistema](../../../csharp/programming-guide/file-system/file-system-and-the-registry.md)

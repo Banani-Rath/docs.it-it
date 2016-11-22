@@ -1,0 +1,61 @@
+---
+title: "break (Riferimenti per C#) | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/17/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "break"
+  - "break_CSharpKeyword"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "break (parola chiave) [C#]"
+ms.assetid: be2571ed-efb0-4965-b122-81e5b09db0b9
+caps.latest.revision: 21
+caps.handback.revision: 21
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translationtype: Human Translation
+---
+# break (Riferimenti per C#)
+L'istruzione `break` termina il ciclo di inclusione più vicino o l'istruzione [switch](../../../csharp/language-reference/keywords/switch.md) in cui è contenuta.  Il controllo viene passato all'istruzione che segue l'istruzione terminata, se presente.  
+  
+## Esempio  
+ In questo esempio l'istruzione condizionale contiene un contatore che dovrebbe contare da 1 a 100. L'istruzione `break` viene tuttavia utilizzata per terminare il ciclo dopo 4 conteggi.  
+  
+ [!CODE [csrefKeywordsJump#1](../CodeSnippet/VS_Snippets_VBCSharp/csrefKeywordsJump#1)]  
+  
+## Esempio  
+ In questo esempio, l'istruzione `break` viene utilizzata per interrompere un ciclo annidato interno e restituire il controllo al ciclo esterno.  
+  
+ [!CODE [csrefKeywordsJump#7](../CodeSnippet/VS_Snippets_VBCSharp/csrefKeywordsJump#7)]  
+  
+## Esempio  
+ In questo esempio viene illustrato l'utilizzo di `break` in un'istruzione [switch](../../../csharp/language-reference/keywords/switch.md).  
+  
+ [!CODE [csrefKeywordsJump#2](../CodeSnippet/VS_Snippets_VBCSharp/csrefKeywordsJump#2)]  
+  
+ Se si inserisse `4`, si otterrebbe il seguente output:  
+  
+```  
+Enter your selection (1, 2, or 3): 4  
+Sorry, invalid selection.  
+```  
+  
+## Specifiche del linguaggio C\#  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+  
+## Vedere anche  
+ [Riferimenti per C\#](../../../csharp/language-reference/index.md)   
+ [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   
+ [Parole chiave di C\#](../../../csharp/language-reference/keywords/index.md)   
+ [switch](../../../csharp/language-reference/keywords/switch.md)   
+ [Istruzioni di spostamento](../../../csharp/language-reference/keywords/jump-statements.md)   
+ [Istruzioni di iterazione](../../../csharp/language-reference/keywords/iteration-statements.md)
